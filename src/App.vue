@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-app>
+    <v-app-bar color="primary" dark app>
+      <v-toolbar-title>Vuetify</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items>
+        <v-btn text to="/">HOME</v-btn>
+        <v-btn text to="/about">ABOUT</v-btn>
+        <v-btn text to="/login">LOGIN</v-btn>
+      </v-toolbar-items>
+    </v-app-bar>
+    <v-main>
+      <router-view />
+    </v-main>
+    <v-footer color="primary" dark app>
+      Vue LINEログイン
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  data: () => ({
+    //
+  }),
+};
+</script>
