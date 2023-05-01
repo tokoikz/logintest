@@ -29,7 +29,7 @@ export default {
   methods: {
     login() {
       let response_type = 'code';
-        let client_id = '*********'; //取得したチャネルID
+        let client_id = '1660928514'; //取得したチャネルID
         let redirect_uri = '*********'; //設定したコールバック関数をURLエンコードしたもの
         let state = '12345abcde';//一旦ここはテキトー
         let scope = 'profile%20openid';
